@@ -1,1 +1,25 @@
-/* your styles go here */
+.social a, .social a:hover, .social a:visited, .social a:focus {
+    border-color: #F05353;
+    color: #F05353;
+}
+.social a:hover, .social a:hover.twitter, .social a:hover.youtube {
+    background-color: #F05353;
+    border-color: #F05353;
+    color: #FFFFFF;
+}
+.intro-right {
+    background-image: url('../img/laptop-monochrome.jpg');
+}
+
+.logo {
+    margin-bottom: 2em;
+}
+.logo img {
+    width: 150px;
+}
+
+@media screen and (max-width: 600px){
+    .logo {
+        text-align: center;
+    }
+}
