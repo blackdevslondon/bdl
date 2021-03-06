@@ -52,6 +52,7 @@ function HomePage() {
 								<h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
 									<span className="block xl:inline">Black Devs UK</span>
 									<span className="block text-indigo-600 xl:inline"> Under Construction</span>
+									<span className="block font-light text-2xl"> Thanks for stopping by, we're still working hard on our new website. </span>
 								</h1>
 								<p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
 									We're building an inspirational community for Black software developers in the UK to improve personal development, strengthen peer networks and accelerate career progression. We're still constructing our new site, but you can join our community today to connect with a growing network of your peers.
