@@ -55,7 +55,9 @@ function HomePage() {
 									<span className="block font-light text-2xl"> Thanks for stopping by, we're still working hard on our new website. </span>
 								</h1>
 								<p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-									We're building an inspirational community for Black software developers in the UK to improve personal development, strengthen peer networks and accelerate career progression. We're still constructing our new site, but you can join our community today to connect with a growing network of your peers.
+									We're building an inspirational community for Black software developers in the UK to improve personal development,
+									strengthen peer networks and accelerate career progression. We're still constructing our new site,
+									but you can join our community today to connect with a growing network of your peers.
 								</p>
 								<div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
 									<div className="rounded-md shadow">
