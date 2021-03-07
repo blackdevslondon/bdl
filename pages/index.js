@@ -35,7 +35,7 @@ function HomePage() {
 								<div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
 									<a href="#" className="font-medium text-gray-500 hover:text-gray-900">Home</a>
 
-									<a href="#" className="font-medium text-gray-500 hover:text-gray-900">About</a>
+									<a href="#" className="font-medium text-gray-500 hover:text-gray-900">About Us</a>
 
 									<a href="#" className="font-medium text-gray-500 hover:text-gray-900">Blog</a>
 
