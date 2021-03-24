@@ -1,3 +1,12 @@
+---
+name: Task
+about: Propose a new task
+title: ''
+labels: ''
+assignees: ''
+
+---
+
 ### Required action
 
 <!--
@@ -7,7 +16,7 @@ A clear description of what the task involves.
 ### Benefits
 
 <!--
-Detail the benefits of this intervention.
+Detail the benefits of this effort.
 -->
 
 ### Relevant links
