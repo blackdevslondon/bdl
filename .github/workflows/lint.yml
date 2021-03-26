@@ -30,6 +30,3 @@ jobs:
         with:
           eslint: true
           eslint_extensions: js,ts,tsx
-
-          prettier: true
-          prettier_extensions: js,md,ts,tsx
