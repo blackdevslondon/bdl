@@ -4,7 +4,7 @@
     "build": "next build && next export",
     "start": "next start -p $PORT",
     "heroku-postbuild": "npm run build",
-    "lint": "eslint './**/*.{js,ts,tsx}' --quiet --fix",
+    "lint": "eslint './pages/*.{js,ts,tsx}' --quiet --fix",
     "prepare": "husky install"
   },
   "dependencies": {
