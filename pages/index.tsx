@@ -1,4 +1,5 @@
 import HEAD from "next/head";
+import Link from "next/link";
 
 function HomePage() {
   return (
@@ -62,19 +63,17 @@ function HomePage() {
                   </div>
                 </div>
                 <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-                  <a
-                    href="#"
-                    className="font-medium text-gray-500 hover:text-gray-900"
-                  >
-                    Home
-                  </a>
+                  <Link href="./content/home">
+                    <a className="font-medium text-gray-500 hover:text-gray-900">
+                      Home
+                    </a>
+                  </Link>
 
-                  <a
-                    href="#"
-                    className="font-medium text-gray-500 hover:text-gray-900"
-                  >
-                    About Us
-                  </a>
+                  <Link href="./content/about">
+                    <a className="font-medium text-gray-500 hover:text-gray-900">
+                      About Us
+                    </a>
+                  </Link>
 
                   <a
                     href="#"
@@ -83,12 +82,11 @@ function HomePage() {
                     Blog
                   </a>
 
-                  <a
-                    href="#"
-                    className="font-medium text-gray-500 hover:text-gray-900"
-                  >
-                    Contact Us
-                  </a>
+                  <Link href="./content/contact">
+                    <a className="font-medium text-gray-500 hover:text-gray-900">
+                      Contact us
+                    </a>
+                  </Link>
 
                   <a
                     href="#"
