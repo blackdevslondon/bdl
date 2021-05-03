@@ -1,5 +1,5 @@
 import HEAD from "next/head";
-import { Navbar } from "./content/navbar";
+import { Navbar } from "../components/navbar";
 
 function HomePage() {
   return (
