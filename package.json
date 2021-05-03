@@ -5,15 +5,18 @@
     "build": "next build && next export",
     "start": "next start -p $PORT",
     "heroku-postbuild": "npm run build",
-    "lint": "eslint './**/*.{js,ts,tsx}' --quiet --fix",
+    "lint": "eslint './pages/**/*.{js,ts,tsx}' --quiet --fix",
     "postinstall": "husky install"
+
   },
   "dependencies": {
+    "@tailwindcss/forms": "^0.3.2",
     "next": "^10.0.7",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
   "devDependencies": {
+    "@types/react": "^17.0.3",
     "@typescript-eslint/eslint-plugin": "^4.19.0",
     "@typescript-eslint/parser": "^4.19.0",
     "autoprefixer": "^10.2.5",
