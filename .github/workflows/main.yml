@@ -2,8 +2,7 @@ name: Deploy
 
 on:
   push:
-    branches:
-      - setup-next-js
+    branches: [ master ]
 
 jobs:
   build:
