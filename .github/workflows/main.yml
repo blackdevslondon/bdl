@@ -3,13 +3,29 @@ name: Deploy
 on:
   push:
     branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  pull_request_target:
+    branches: [ master ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+      - name: Checkout Git Repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: yarn add -D jest
+      - run: yarn run build --if-present
+      - run: yarn run test
+
+
+      - name: Deploy to Heroku
+        uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "bduk-website" #Must be unique in Heroku

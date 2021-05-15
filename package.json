@@ -6,7 +6,8 @@
     "start": "next start -p $PORT",
     "heroku-postbuild": "npm run build",
     "lint": "eslint './pages/**/*.{js,ts,tsx}' --quiet --fix",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "test": "jest"
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.3.2",
