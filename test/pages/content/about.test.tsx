@@ -6,6 +6,5 @@ describe('About Page', () => {
   it('should match snapshot', () => {
     const { asFragment } = render(<About />, {});
     expect(asFragment()).toMatchSnapshot()
-
   });
 });
