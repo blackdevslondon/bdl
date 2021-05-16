@@ -38,7 +38,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: test
     steps:
-      - name: Deploy to Heroku
+     - name: Deploy to Heroku
        uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
        with:
          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
