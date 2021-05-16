@@ -9,7 +9,7 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
+  setup:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Git Repository
@@ -19,14 +19,28 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: yarn add -D jest
+
+  build:
+    runs-on: ubuntu-latest
+    needs: setup
+    steps:
       - run: yarn run build
-      - run: yarn run test
+
+  test:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Testing App
+        run: yarn run test
 
 
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
       - name: Deploy to Heroku
-        uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
-        with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "bduk-website" #Must be unique in Heroku
-          heroku_email: "team@blackdevs.uk"
+       uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+       with:
+         heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+         heroku_app_name: "bduk-website" #Must be unique in Heroku
+         heroku_email: "team@blackdevs.uk"
