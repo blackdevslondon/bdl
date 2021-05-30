@@ -95,21 +95,9 @@ exports[`About Page should match snapshot 1`] = `
           </a>
           <a
             class="font-medium text-gray-500 hover:text-gray-900"
-            href="#"
-          >
-            Blog
-          </a>
-          <a
-            class="font-medium text-gray-500 hover:text-gray-900"
             href="/content/contact"
           >
             Contact us
-          </a>
-          <a
-            class="font-medium text-indigo-600 hover:text-indigo-500"
-            href="#"
-          >
-            Log in
           </a>
         </div>
       </nav>
