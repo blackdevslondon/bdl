@@ -5,7 +5,7 @@ import Home from "../../../pages/content/home";
 describe("Home Page", () => {
   it("should have an About Us section", () => {
     render(<Home />);
-    const aboutUsSection = screen.getByTestId("about-us");
-    expect(aboutUsSection).toHaveTextContent("About Us");
+    const aboutUsSection = screen.getAllByText(/about us/i)[1];
+    expect(aboutUsSection).toBeInTheDocument();
   });
 });

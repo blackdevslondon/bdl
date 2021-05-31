@@ -1,6 +1,6 @@
 const AboutSection = () => {
   return (
-    <div data-testid="about-us" className="font-bold text-5xl text-center mt-9">
+    <div className="font-bold text-5xl text-center mt-9">
       <h1>About Us</h1>
       <article>
         <p className="about-text">
