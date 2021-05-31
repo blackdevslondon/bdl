@@ -8,4 +8,10 @@ describe("Home Page", () => {
     const aboutUsSection = screen.getAllByText(/about us/i)[1];
     expect(aboutUsSection).toBeInTheDocument();
   });
+
+  it("should have an Our Mission section", () => {
+    render(<Home />);
+    const ourMissionSection = screen.getByText(/our mission/i);
+    expect(ourMissionSection).toBeInTheDocument();
+  });
 });
