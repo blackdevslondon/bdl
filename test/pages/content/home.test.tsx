@@ -14,4 +14,10 @@ describe("Home Page", () => {
     const ourMissionSection = screen.getByText(/our mission/i);
     expect(ourMissionSection).toBeInTheDocument();
   });
+
+  it("should have an Our Team section", () => {
+    render(<Home />);
+    const ourTeamSection = screen.getByText(/meet our team/i);
+    expect(ourTeamSection).toBeInTheDocument();
+  });
 });

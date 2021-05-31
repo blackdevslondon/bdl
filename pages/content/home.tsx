@@ -1,6 +1,7 @@
 import { Navbar } from "../../components/navbar";
 import AboutSection from "../../components/aboutSection";
 import { OurMissionSection } from "../../components/ourMissionSection";
+import { OurTeamSection } from "../../components/ourTeamSection";
 
 const Home = () => (
   <div>
@@ -8,6 +9,7 @@ const Home = () => (
     <div className="sm:container sm:mx-auto md:container md:mx-auto">
       <AboutSection />
       <OurMissionSection />
+      <OurTeamSection />
       <article>
         <p className="home-text">
           I'm baby chambray four dollar toast man bun blog roof party gastropub
