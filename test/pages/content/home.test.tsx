@@ -20,4 +20,10 @@ describe("Home Page", () => {
     const ourTeamSection = screen.getByText(/meet our team/i);
     expect(ourTeamSection).toBeInTheDocument();
   });
+
+  it("should have an Our Vision section", () => {
+    render(<Home />);
+    const ourVisionSection = screen.getByText(/our vision/i);
+    expect(ourVisionSection).toBeInTheDocument();
+  });
 });
