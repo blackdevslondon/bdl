@@ -1,12 +1,11 @@
 import { Navbar } from "../../components/navbar";
+import AboutSection from "../../components/aboutSection";
 
 const Home = () => (
   <div>
     <Navbar />
-    <div className="md:container md:mx-auto">
-      <h1 className="font-bold text-5xl text-center mt-9">
-        Welcome to Black Devs UK
-      </h1>
+    <div className="sm:container sm:mx-auto md:container md:mx-auto">
+      <AboutSection />
       <article>
         <p className="home-text">
           I'm baby chambray four dollar toast man bun blog roof party gastropub
