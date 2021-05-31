@@ -32,4 +32,10 @@ describe("Home Page", () => {
     const contactUsSection = screen.getAllByText(/contact us/i)[1];
     expect(contactUsSection).toBeInTheDocument();
   });
+
+  it("should have a Quotable section", () => {
+    render(<Home />);
+    const quotableSection = screen.getByText("Vehicula fermentum diam");
+    expect(quotableSection).toBeInTheDocument();
+  });
 });

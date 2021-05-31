@@ -4,6 +4,7 @@ import { OurMissionSection } from "../../components/ourMissionSection";
 import { OurTeamSection } from "../../components/ourTeamSection";
 import { OurVisionSection } from "../../components/ourVisionSection";
 import { ContactUsSection } from "../../components/contactUsSection";
+import { QuotableSection } from "../../components/quotableSection";
 
 const Home = () => (
   <div>
@@ -14,6 +15,7 @@ const Home = () => (
       <OurTeamSection />
       <OurVisionSection />
       <ContactUsSection />
+      <QuotableSection />
       <article>
         <p className="home-text">
           I'm baby chambray four dollar toast man bun blog roof party gastropub
