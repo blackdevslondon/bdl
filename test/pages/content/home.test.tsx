@@ -38,4 +38,10 @@ describe("Home Page", () => {
     const quotableSection = screen.getByText("Vehicula fermentum diam");
     expect(quotableSection).toBeInTheDocument();
   });
+
+  it("should have a Big Footer section", () => {
+    const { container } = render(<Home />);
+    const bigFooterSection = container.querySelector("#big-footer");
+    expect(bigFooterSection).toBeInTheDocument();
+  });
 });
