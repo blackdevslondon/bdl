@@ -6,6 +6,7 @@ import { OurVisionSection } from "../../components/ourVisionSection";
 import { ContactUsSection } from "../../components/contactUsSection";
 import { QuotableSection } from "../../components/quotableSection";
 import { BigFooterSection } from "../../components/bigFooterSection";
+import { SmallFooterSection } from "../../components/smallFooterSection";
 
 const Home = () => (
   <div>
@@ -18,6 +19,7 @@ const Home = () => (
       <ContactUsSection />
       <QuotableSection />
       <BigFooterSection />
+      <SmallFooterSection />
       <article>
         <p className="home-text">
           I'm baby chambray four dollar toast man bun blog roof party gastropub

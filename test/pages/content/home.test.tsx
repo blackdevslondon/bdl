@@ -44,4 +44,10 @@ describe("Home Page", () => {
     const bigFooterSection = container.querySelector("#big-footer");
     expect(bigFooterSection).toBeInTheDocument();
   });
+
+  it("should have a Small Footer section", () => {
+    const { container } = render(<Home />);
+    const smallFooterSection = container.querySelector("#small-footer");
+    expect(smallFooterSection).toBeInTheDocument();
+  });
 });
