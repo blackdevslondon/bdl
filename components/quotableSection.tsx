@@ -1,7 +1,9 @@
 export const QuotableSection = () => (
-  <article>
-    <p className="text-center mt-9">
-      <q className="font-bold text-5xl">Vehicula fermentum diam</q>
-    </p>
-  </article>
+  <div className="bg-gray-300">
+    <article>
+      <p className="text-center">
+        <q className="font-bold text-5xl">Vehicula fermentum diam</q>
+      </p>
+    </article>
+  </div>
 );

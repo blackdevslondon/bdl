@@ -1,7 +1,7 @@
 const AboutSection = () => {
   return (
-    <div>
-      <h1 className="font-bold text-5xl text-center mt-9">About Us</h1>
+    <div className="bg-blue-300">
+      <h1 className="font-bold text-5xl text-center">About Us</h1>
       <article>
         <p className="about-text">
           I'm baby chambray four dollar toast man bun blog roof party gastropub
