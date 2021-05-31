@@ -26,4 +26,10 @@ describe("Home Page", () => {
     const ourVisionSection = screen.getByText(/our vision/i);
     expect(ourVisionSection).toBeInTheDocument();
   });
+
+  it("should have a Contact Us section", () => {
+    render(<Home />);
+    const contactUsSection = screen.getAllByText(/contact us/i)[1];
+    expect(contactUsSection).toBeInTheDocument();
+  });
 });
